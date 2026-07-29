@@ -1,0 +1,13 @@
+{ "name": "02_Cody_262769N_A2",
+"short_name": "14PWA",
+"start_url": "index.html",
+"display": "standalone",
+"background_color": "#ffffff",
+"theme_color": "#00FF00",
+"icons": [
+{ "src": "icons8-music-32",
+"sizes": "64x64",
+"type": "image/png"
+}
+]
+}
