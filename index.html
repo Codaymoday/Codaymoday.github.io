@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Music</title>
+		<script src="main.js" defer></script>
+		<link href="Style.css" type="text/css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+	</head>
+	<body>
+		<header><!--minigame--!>
+			<h1 id="top">Music</h1>
+			<button id="btnFS">Toggle FullScreen</button><!--toggles fullscreen--!>
+		</header>
+		<button id="Gamebtn">Click here to start the rhythm game! (Warning:Starts Immediately)</button>
+			<article class="page" id="page5">
+				<h2>Rhythm Game</h2>
+				<p>Click On the note on the right timing to score points, be sure to avoid the beamed notes or else you'll lose points</p>
+				<h2 id="scoreBox">Score: 0</h2>
+				<h2 id="TimerBox">Timer: Not Started</h2>
+				<button id="restartbtn">Restart Game</button>
+				<button id="stopbtn">Stop Game</button>
+				<div id="gamebox">
+					<img id="beamednoteId" src="images/beamednote.png" alt="beamed note image" width="5" Height="5">
+					<img id="noteId" src="images/note.png" alt="note image" width="5" Height="5">
+				</div>
+			</article>
+		<nav> <!--menu system-->
+			<!--hamburger icon for mobile-->
+			<button id="hamIcon">Open Menu</button>
+			
+			<ul>
+				<li>
+					<div id="History"></div>
+					<button id="page1btn" class="pagebutton">Musical History</button>	
+				</li>
+				<li>
+					<div id="Why"></div>
+					<button id="page2btn" class="pagebutton">Why we make music</button>
+				</li>
+				<li>
+					<div id="Benefits"></div>
+					<button id="page3btn" class="pagebutton">The benefits of music</button>
+				</li>
+				<li><button id="page4btn" class="pagebutton">
+					References
+				</button></li>
+			</ul>
+		</nav>
+		<main id="pagecontainer">
+			<section class="page" id="page1">
+				<h2>The History of music</h2>
+				<button id="Historybtn">40,000BCE-500CE</button>
+				<section class="page" id="page8">
+					<h2>Prehistoric and Ancient music</h2>
+					<p>Ever since the stone age, we humans have been resonating our voices and using our bodies as instruments to make art in the form of sound. After that, the earliest known instrument was a bone flute found in the caves of southern germany as well as harps and lyres in ancient egypt. The oldest known melody is the hurrian hymn to nikkal, inscribed on a clay tablet in syria about 3,400 years ago</p> 
+				</section>
+				<p>|</p>
+				<p>v</p>
+				<button id="Historybtn2">500-1600</button>
+				<section class="page" id="page9">
+					<h2>Medieval and Renaissance</h2>
+					<p>In medieval times, people typically listened to music in the form of gregorian chants sung by catholic churches. In the Renaissance art in general got major improvements, where music gained expressiveness in the form of polyphony and secular music where they allowed the intertwining of multiple melodies</p>
+				</section>
+				<p>|</p>
+				<p>v</p>
+				<button id="Historybtn3">1600 – 1820</button>
+				<section class="page" id="page10">
+					<h2>Baroque and Classical Eras</h2>
+					<p>In the baroque era, opera and standard music scales were introduced into the scene, creating great composers like J.S. Bach and Antonio Vivladi. In the Classical era, symphony and string quartets were introduced, producing great composers like Mozart and Beethoven</p>
+				</section>
+				<p>|</p>
+				<p>v</p>
+				<button id="Historybtn4">1820-1999</button>
+				<section class="page" id="page11">
+					<h2>Romantic Period and the 20th Century</h2>
+					<p>The Romantic Period expanded on intense emotion, individual expression and orchestral expansion and created great composers like Tchaikovsky and Chopin. In the 19th Century, African American communities created blues and jazz genres which introduced higher levels of improvisation and syncopathed rythmns. In the 1950s, there was a big skyrocket in the rock and roll genre, eventually branching out to subgenres like punk, grunge and heavy metal in the following generations.</p>
+				</section>
+				<p>|</p>
+				<p>v</p>
+				<button id="Historybtn5">2000-Present day</button>
+				<section class="page" id="page12">
+					<h2>The Digital Age</h2>
+					<p>The late 20th and 21st centuries revolutionized how we make and listen to music, popularising electronic dance music, hip-hop and contemporary pop with new inventions, along with the internet making it much easier for up and coming artists to distribute their music.</p> 
+				</section>
+				<br>
+				<button id="testpage1btn">Click here for a test on this article</button>
+				<section class="page" id="page14">
+					<h2>Test Time</h2>
+					<fieldset>
+						<legend>1. Which of these is NOT an actual era of music</legend>
+						<label><input type="radio" name="test3q1" value="Baroque era"> Baroque era</label>
+						<label><input type="radio" name="test3q1" value="Medieval era"> Medieval era</label>
+						<label><input type="radio" name="test3q1" value="Digital era"> Digital era</label>
+						<label><input type="radio" name="test3q1" value="Shoegaze era"> Shoegaze era</label>
+					</fieldset>
+					<fieldset>
+						<legend>2. Which of these composers was NOT a part of the classical era</legend>
+						<label><input type="radio" name="test3q2" value="Bach"> Bach</label>
+						<label><input type="radio" name="test3q2" value="Beethoven">Beethoven</label>
+						<label><input type="radio" name="test3q2" value="Mozart"> Mozart</label>
+						<label><input type="radio" name="test3q2" value="Haydn"> Haydn</label>
+					</fieldset>
+					<fieldset>
+						<legend>3. In what period did the rock and roll genre get popularised?</legend>
+						<label><input type="radio" name="test3q3" value="The 20th Century"> The 20th Century</label>
+						<label><input type="radio" name="test3q3" value="The Baroque era">The Baroque era</label>
+						<label><input type="radio" name="test3q3" value="The 1950s"> The 1950s</label>
+						<label><input type="radio" name="test3q3" value="The 22nd Century"> The 22nd Century</label>
+					</fieldset>
+						<button id="btn3Submit">Submit Quiz</button>
+						<h2 id="quizscorebox3">Not submitted</h2>
+				</section>
+			</section>
+			<section class="page" id="page2">
+				<h2>The Importance of Music in a society</h2>
+				<h3>Yes, music is beautiful and colorful, but why do we listen to and make music? Well, </h3>
+				<section class="textbox">
+					<h3>According to the New York Times, this guy:</h3>
+					<div id="Darwin"></div>
+					<p>(Charles Darwin)</p>	
+					<p>He had the same question, stating that mankind's ability to make music "must be ranked amongst the most mysterious with which he is endowed" as it provided no benefit to our survival from an evolutionary standpoint, so why is it that we continue to make and listen to music to this day?</p>
+					<p>Well, to this day scientists do not yet know why we make music, but many field studies have provided theories such as music providing bonding time from parents to their children (Dr. Sammler in a study for the scienceadvances paper), or to improve group cohesion (Dr. Ozaki said in that same study).</p>
+					<p>However, my favourite theory is that it is simply a universal language that all cultures can understand, providing a perfect way to harmonize the world (Daniela Sammler, a neuroscientist at the Max Planck Institute for Empirical Aesthetics in Frankfurt)</p>
+				</section>
+				<button id="testpage2btn">Click here for a test on this article</button>
+				<section class="page" id="page4">
+					<h2>Test Time</h2>
+					<fieldset>
+						<legend>1. Who is the person I mentioned who wondered why we make music?</legend>
+						<label><input type="radio" name="q1" value="Plato"> Plato</label>
+						<label><input type="radio" name="q1" value="Charles Darwin"> Charles Darwin</label>
+						<label><input type="radio" name="q1" value="Jpxfrd"> Jpxfrd</label>
+						<label><input type="radio" name="q1" value="Confucius"> Confucius</label>
+					</fieldset>
+					<fieldset>
+						<legend>2. Which of these theories is my personal favourite?</legend>
+						<label><input type="radio" name="q2" value="Family Bonding Time"> Family Bonding Time</label>
+						<label><input type="radio" name="q2" value="Soul Resonance"> Soul Resonance</label>
+						<label><input type="radio" name="q2" value="Team Building"> Team Building</label>
+						<label><input type="radio" name="q2" value="Universal Language"> Universal Language</label>
+					</fieldset>
+					<fieldset>
+						<legend>3. What is the actual reason why we make music?</legend>
+						<label><input type="radio" name="q3" value="Universal Language"> Universal Language</label>
+						<label><input type="radio" name="q3" value="Family Bonding Time">Family Bonding Time</label>
+						<label><input type="radio" name="q3" value="Team Building"> Team Building</label>
+						<label><input type="radio" name="q3" value="We Don't Actually Know"> We Don't Actually Know</label>
+					</fieldset>
+						<button id="btnSubmit">Submit Quiz</button>
+						<h2 id="quizscorebox">Not submitted</h2>
+				</section>
+			</section>
+			<section class="page" id="page3">
+				<h2>How it benefits you</h2>
+				<h3>Knowing why we evolved to make music is cool and all, but what does it actually do for YOU?</h3>
+				<section class="textbox">
+					<h2>Well, according to healthline,</h2>
+					<h3>Music provides better social connections</h3>
+					<ul>
+						<li>National Anthems</li>
+						<li>Marching bands</li>
+						<li>Hymns</li>
+					</ul>
+					<p>These are all things that can bring cities together to unite under one cause, providing better social connections with each other</p>
+					<h3>Music can help the mind with these:</h3>
+					<ul>
+						<li>Perception</li>
+						<li>Fluency</li>
+						<li>Creativity</li>
+						<li>IQ scores</li>
+						<li>Spatial skill</li>
+						<li>Memory</li>
+						<li>Possible mental illnesses</li>
+					</ul>
+					<p>Music can help with all the things listed above<p>
+					<h3>Music can also help with your mood by:</h3>
+					<ul>
+						<li>Lowering anxiety</li>
+						<li>Help with depression symptoms as a coping mechanism</li>
+					</ul>
+					<h3>Music can also improve the body by:</h3>
+					<ul>
+						<li>Improving your heart health</li>
+						<li>Decreasing fatigue</li>
+						<li>Boost exercise performance</li>
+						<li>Help manage pain</li>
+					</ul>
+					<p>These are all the things that music do for you and why you should get into it</p>
+				</section>
+				<button id="testpage3btn">Click here for a test on this article</button>
+				<section class="page" id="page13">
+					<h2>Test Time</h2>
+					<fieldset>
+						<legend>1. Which of these does music not improve?</legend>
+						<label><input type="radio" name="test2q1" value="Mood"> Mood</label>
+						<label><input type="radio" name="test2q1" value="Body"> Body</label>
+						<label><input type="radio" name="test2q1" value="Popularity"> Popularity</label>
+						<label><input type="radio" name="test2q1" value="Mental Health"> Mental Health</label>
+					</fieldset>
+					<fieldset>
+						<legend>2. Which of these types songs did I NOT mention as an example for songs that create social connections</legend>
+						<label><input type="radio" name="test2q2" value=" National Anthemns"> National Anthemns</label>
+						<label><input type="radio" name="test2q2" value="Hymns">Hymns</label>
+						<label><input type="radio" name="test2q2" value="Marching bands"> Marching bands</label>
+						<label><input type="radio" name="test2q2" value="Shoegaze"> Shoegaze</label>
+					</fieldset>
+					<fieldset>
+						<legend>3. Which of these does music actually help you with</legend>
+						<label><input type="radio" name="test2q3" value="Bowel Functions"> Bowel Functions</label>
+						<label><input type="radio" name="test2q3" value="IQ">IQ</label>
+						<label><input type="radio" name="test2q3" value="Eating"> Eating</label>
+						<label><input type="radio" name="test2q3" value="Hand-eye coordination"> Hand-eye coordination</label>
+					</fieldset>
+						<button id="btn2Submit">Submit Quiz</button>
+						<h2 id="quizscorebox2">Not submitted</h2>
+				</section>
+			</section>
+			<section class="page" id="page6">
+				<h2>References made</h2>
+				<h3>Albums and artists used for the background art in order from top left to bottom right:</h3>
+				<p><a href="https://open.spotify.com/album/1sZsY3CrPE6z1xlOKzQs2X?si=_NRHc1T0T42WQwImK-PAUg" target="_blank">Floral Green</a> by <a href="https://open.spotify.com/artist/2CnhqfjUG0qzsru0SMuhrk?si=xs5Y8z72RWeqPQi--8GGjg" target="_blank">Title Fight</a></p>
+				<p><a href="https://open.spotify.com/album/3CooFtn84cBTR3rmfkda5v?si=8mVD-peIRb6QB5LY1-55hQ" target="_blank">LSD and the Search for God</a> by <a href="https://open.spotify.com/artist/2feOOr1Yjovo67byuxvjZv?si=WxOBgugXQpKLQN7D8uOpGg" target="_blank"> LSD and the Search for God</a></p>
+				<p><a href="https://open.spotify.com/album/3USQKOw0se5pBNEndu82Rb?si=aRY7zTKpShag3sx1E5jLig" target="_blank">loveless</a> by <a href="https://open.spotify.com/artist/3G3Gdm0ZRAOxLrbyjfhii5?si=RuwKcHDNQNa-mAAoa1nDiw" target="_blank">my bloody valentine</a></p>
+				<p><a href="https://open.spotify.com/album/6dVIqQ8qmQ5GBnJ9shOYGE?si=kkUvQnYWSay47WJCHAuR9Q" target="_blank">OK Computer</a> by <a href="https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb?si=4lVjAJXHRPO_S2S02y2AqA" target="_blank">Radiohead</a></p>
+				<p><a href="https://open.spotify.com/album/4Oxq6HmTy6MPNyLk49pxyK?si=Z5x3JbJFTzuYPSbbGz8hbQ" target="_blank">i saw an angel in the mirror</a> by <a href="https://open.spotify.com/artist/7LVAUhsUTlHOieB4HhVNFT?si=2s2ewHwhRNK6dgoi31hsZA" target="_blank">Robin Callaway</a></p>
+				<p><a href="https://open.spotify.com/album/1SP3FfoB74hoginJJAom6J?si=g4s_iIHjQnqc7M8P2B5jaA" target="_blank">Deathconsciousness</a> by <a href="https://open.spotify.com/artist/0FRKTwQSToXpCxYMhyUzYY?si=Jjs3erdETsCO-gXUwFaO4g" target="_blank">Have A Nice Life</a></p>
+				<p><a href="https://open.spotify.com/album/35UJLpClj5EDrhpNIi4DFg?si=VK6XwzhUQfWBVUWGfHWXKw" target="_blank">The Bends</a> by <a href="https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb?si=4lVjAJXHRPO_S2S02y2AqA" target="_blank">Radiohead</a></p>
+				<p><a href="https://open.spotify.com/album/5vkqYmiPBYLaalcmjujWxK?si=Zrf_Go7eSQGIzOLwgeTCLA" target="_blank">In Rainbows</a> by <a href="https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb?si=4lVjAJXHRPO_S2S02y2AqA" target="_blank">Radiohead</a></p>
+				<p><a href="https://open.spotify.com/album/7Mz3AROK1ffsZhTMaFCdvv?si=5anx7fPSQ_qktw1dZ44mgw" target="_blank">wetdream</a> by <a href="https://open.spotify.com/artist/0NE6MVtTFUuLSPWdwzqcNP?si=Sg1YIaQESeq3ttWbNB6cjQ" target="_blank">WillyRodriguezWasTaken</a></p>
+				<p><a href="https://open.spotify.com/album/6zTAW5oRuOmxJuUHhcQope?si=GIP1Ad-xTTqczcZE7YsEVw" target="_blank">In Rainbows(Disk2)</a> by <a href="https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb?si=4lVjAJXHRPO_S2S02y2AqA" target="_blank">Radiohead</a></p>
+				<p><a href="https://open.spotify.com/album/5IyHtkKQvafw7bQYFnx4FO?si=oC0el5Z0T5WHPKQ57FOd1g" target="_blank">To See the Next Part of the Dream</a> by <a href="https://open.spotify.com/artist/7eZbNxarrTW4VkRI8u9aDX?si=I5SJeEcsSDKZZ3azRnaKDA" target="_blank">Parannoul</a></p>
+				<p><a href="https://open.spotify.com/album/0hm7PiBu72tRliLqLfiKy1?si=6TMEdLZfSqC9J3zQMduB2Q" target="_blank">We're Not Here to Be Loved</a> by <a href="https://open.spotify.com/artist/6P5ccCJCe8A4s9tDSTNFzF?si=AxPPM4UbTvqSP4MiZqQ_1w" target="_blank">Fleshwater</a></p>
+				<p><a href="https://open.spotify.com/album/7uwQKBi4LvJwNS8dlZHfbm?si=OG2NOgI5R9u260jC4SBAmQ" target="_blank">Forward</a> by <a href="https://open.spotify.com/artist/7DgsNBbuNxmm5et9oYHJgx?si=wll29AsnQA2JbpQ8wfFY4Q" target="_blank">First Day Back</a></p>
+				<p><a href="https://open.spotify.com/album/3DtYKsaKHafHFT0vd9tchS?si=NIYMbInYQPiJ-FZGzNYtyA" target="_blank">Hyperview</a> by <a href="https://open.spotify.com/artist/2CnhqfjUG0qzsru0SMuhrk?si=xs5Y8z72RWeqPQi--8GGjg" target="_blank">Title Fight</a></p>
+				<p><a href="https://open.spotify.com/album/0nwLNp8Qef1KpnUdXJgEJn?si=XbiZO_93SCa78F37N8GArg" target="_blank">World Is Yours</a> by <a href="https://open.spotify.com/artist/14d5KCX9nprUcxnKIShrr1?si=1RAQQsBMQXqqtvUYdoN1iA" target="_blank">MASS OF THE FERMENTING DREGS</a></p>
+				<h3>Song I used for the rythmn game</h3>
+				<p><a href="https://open.spotify.com/track/4wajJ1o7jWIg62YqpkHC7S?si=7c6237678ae94552" target="_blank">Weird Fishes/Arpeggi</a> from the album <a href="https://open.spotify.com/album/5vkqYmiPBYLaalcmjujWxK?si=Zrf_Go7eSQGIzOLwgeTCLA" target="_blank"> In Rainbows</a> by <a href="https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb?si=4lVjAJXHRPO_S2S02y2AqA" target="_blank">Radiohead</a></p>
+				<h3><a href="https://www.pinterest.com/pin/661747738978521091/" target="_blank">note image used in the benefits and game section</a></h3>
+				<h3><a href="https://www.facebook.com/groups/1874865979439648/posts/2815648892028014/" target="_blank">Painting titled Musical Company I used for the History button</a></h3>
+				<h3><a href="https://percentagecalculator.io/rene-descartes/" target="_blank">Self portrait of Rene Descartes I used for the why button</a></h3>
+				<h3><a href="https://www.thoughtco.com/who-is-charles-darwin-1224477" target="_blank">Image of Charles darwin I used in the article on why we make music</a></h3>
+				<h3><a href="https://www.youtube.com/watch?v=0w7ip24LIYM&t" target="_blank">Video I referenced to make the History of music section</a></h3>
+				<h3><a href="https://www.nytimes.com/2024/05/15/science/universal-music-evolution.html" target="_blank">Article I referenced on the why we make music</a></h3>
+				<h3><a href="https://www.healthline.com/health/benefits-of-music" target="_blank">Article I referenced on how we benefit from listening to music</a></h3>
+				<h2 class="qrcode">Mobile Version</h2>
+				<img class="qrcode" alt="qrcode" src="images/qrcode.png" width="150" height="150">
+			</section>
+		</main>
+	</body>
+</html>
