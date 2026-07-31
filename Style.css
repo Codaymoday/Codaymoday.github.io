@@ -1,0 +1,174 @@
+body {background-image: url("images/Albums.png");background-size: cover; background-position: center;font-family:'Ink Free';display:flex;flex-wrap:wrap;text-align:center;}
+.page{border: 2px solid #9DB0CA;padding:1%;margin:1%}
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+li {
+	list-style:none;
+}
+
+nav ul li button 
+{
+	margin-top:5vh;
+	margin-left:6vw;
+}
+#page1{background:#CBA1A0;width:94vw;height:315vh;}
+#page2{background:#F9E441;width:94vw;height:135vh;}
+#page3{background:#247CDE;width:94vw;height:178vh;}
+#page4{background:#F9E441;width:90vw;height:73vh;margin-top:6%}
+#page6{background:#9DB0CA;width:90vw;height:225vh;}
+#page8{background:#A68281}
+#page9{background:#A68281}
+#page10{background:#A68281}
+#page11{background:#A68281}
+#page12{background:#A68281}
+#page13{background:#247CDE;width:90vw;height:73vh;margin-top:6%}
+#page14{background:#CBA1A0;width:90vw;height:73vh;margin-top:6%}
+/*CSS for responsive menu*/
+#hamIcon{display:none;}
+/*to unhide menu items*/
+.menuShow{
+	display: flex;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.menuShow li div {
+	margin-left: 0;
+}
+
+#noteId 
+{
+	position: relative;
+	width:7vw;
+	height:15vh;
+	transition: opacity 0.25s, width 0.25s, height 0.25s;
+	padding: 4%;
+	margin-right:100vw;
+}
+#beamednoteId
+{
+	position: relative;
+	width:4vw;
+	height:10vh;
+	transition: opacity 0.25s, width 0.25s, height 0.25s;
+	padding: 4%;
+	margin-right:100vw;
+}
+#noteId.shrink{width:2vw;opacity: 0;height:7vh}
+#beamednoteId.shrink{width:2vw;opacity: 0;height:7vh}
+@keyframes pageanimation
+{
+	0%{opacity: 0}
+	100%{opacity: 1}
+}
+@keyframes buttonanimation
+{
+	0%{padding:1%;}
+	100%{padding:1.5%;background-color:#7F93A3}
+}
+@keyframes pagebuttonanimation
+{
+	0%{padding:5%;}
+	100%{padding:8%;background-color:#7F93A3}
+}
+.pageanim{animation: pageanimation 0.5s;}
+#gamebox{height:60vh;width:37.5vw;margin-left:27.7vw;background-color:#DA603D;border: 2px solid #9DB0CA;}
+article{background-color:#DA603D;height:117vh;padding-top:0vh;flex:100%;margin:1%;border: 2px solid #9DB0CA;margin-left:5%;margin-right:5%}
+#text{padding-bottom:0vh}
+header {background-color:#2596BE;flex:100%;vertical-align:top;margin:1%;border: 2px solid #9DB0CA}
+button{background-color:#9DB0CA;padding:1%;margin:1%;flex:80%}
+button:hover{animation: buttonanimation 1s;padding:1.5%;background-color:#7F93A3}
+.pagebutton{padding:5%;}
+.pagebutton:hover{animation:pagebuttonanimation 1s;padding:8%}
+section{border: 2px solid #9DB0CA;padding:2%;margin:1%;}
+.textbox{text-align:left;padding-left:4%;padding-right:4%}
+div{margin-left:15vh;}
+#History
+{
+	width:319.2px;
+	height:199.4px;
+	background-image: url('images/Sprite.jpg');
+	background-position: 0 0;
+}
+#Why
+{
+	width:168.5px;
+	height:252.8px;
+	background-image: url('images/Sprite.jpg');
+	background-position: -319.2px 0;
+}
+#Benefits
+{
+	width:267.7px;
+	height:199.4px;
+	background-image: url('images/Sprite.jpg');
+	background-position: -487.7px 0;
+}
+#Darwin
+{
+	width:295.9px;
+	height:199.4px;
+	background-image: url('images/Sprite.jpg');
+	background-position: -758.3px 0;
+}
+
+@media (max-width:800px)
+{
+	#page3{height:205vh;}
+	#page1{height:360vh;}
+	#page2{height:165vh;}
+	#page6{height:220vh;}
+	nav ul li{
+		display:flex;
+		justify-content: space-around;
+		list-style:none;
+		flex-direction: column;
+		align-items: center;
+	}
+	#hamIcon{display:block;}
+	nav ul{display:none;}
+	#page5{flex:90%;padding:2%;padding-bottom:9%}
+	#gamebox{height:59vh;width:40vw;margin-left:25.5vw;}
+	div{height:105vh;}
+	footer{display:none;}
+	.pagebutton{margin-left:0}
+	#noteId{width:10vw}
+	#beamednoteId{width:6vw;}
+	#top::after{content:"(mobile)";}
+	#History
+	{
+		width:128.3px;
+		height:80.2px;
+		background-image: url('images/Sprite2.jpg');
+		background-position: 0 0;
+	}
+	#Why
+	{
+		width:100.1px;
+		height:150.2px;
+		background-image: url('images/Sprite2.jpg');
+		background-position: -319.2px 0;
+	}
+	#Benefits
+	{
+		width:133.8px;
+		height:99.7px;
+		background-image: url('images/Sprite2.jpg');
+		background-position: -487.7px 0;
+	}
+	.pagebutton{
+		padding:0 15px;
+		max-height: 35px;
+	}
+	@keyframes pagebuttonanimation
+	{
+		0%{padding:0.5%;}
+		100%{padding:2%;background-color:#7F93A3}
+	}
+	.pagebutton:hover{padding:2%}
+	.qrcode{display:none}
+	#noteId.shrink{width:5vw;opacity: 0;height:7vh}
+}
